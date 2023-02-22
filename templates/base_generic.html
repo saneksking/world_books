@@ -10,7 +10,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     {% block head %}
-        <img src="{% static 'images/logo.jpg' %}" style="width: 100px; height: 100px;  align: 'absmiddle'">
+        <img src="{% static 'image/logo.jpg' %}" style="width: 100px; height: 100px;  align: 'absmiddle'">
         <span style="color: blue; size: 7px">Site "World of books"</span>
     {% endblock %}
 </head>
@@ -20,7 +20,7 @@
            <div class="col-sm-2">
                {% block sidebar %}
                <ul class="sidebar-nav">
-                   <li><a href="{% url 'index' %}">Index page</a></li>
+                   <li><a href="">Index page</a></li>
                    <li><a href="">All books</a></li>
                    <li><a href="">All authors</a></li>
                </ul>
