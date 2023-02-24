@@ -6,5 +6,5 @@ from . import views
 app_name = 'catalog'
 urlpatterns = [
     path('', views.index, name='index'),
-    url(r'^books/$', views.models.BookListViews.as_view(), name='books'),
+    path('books/', views.BookListView.as_view(), name='books'),
 ]
